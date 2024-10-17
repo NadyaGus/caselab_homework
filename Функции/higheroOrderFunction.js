@@ -8,13 +8,12 @@ function filterArray(array, callback) {
 const numbers = [1, 2, 3, 4, 5];
 
 function isOdd(num) {
-  // Ваш код здесь
+  return num % 2 !== 0;
 }
 function isEven(num) {
-  // Ваш код здесь
-  
+  return num % 2 === 0;
 }
 
 // Для проверки используйте логи (раскомментируйте их после написания функций)
-// console.log(filterArray(numbers, isEven)); // Должен вывести: [2, 4]
-// console.log(filterArray(numbers, isOdd)); // Должен вывести: [1, 3, 5]
+console.log(filterArray(numbers, isEven)); // Должен вывести: [2, 4]
+console.log(filterArray(numbers, isOdd)); // Должен вывести: [1, 3, 5]
